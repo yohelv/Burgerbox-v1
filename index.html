@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Box Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .section-yellow {
+            background-color: #ffd700;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .section-black {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .section-yellow h2, .section-black h2 {
+            margin: 0 0 10px 0;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .item2 {
+            /* display: flex; */
+            text-align: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .item span {
+            display: block;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+        .burger-icon {
+            width: 100px;
+            position: absolute;
+        }
+        .burger-icon.top-left {
+            top: 50px;
+            left: 190px;
+        }
+        .burger-icon.top-right {
+            top: -50px;
+            right: -50px;
+        }
+        .burger-icon.bottom-left {
+            bottom: -50px;
+            left: -50px;
+        }
+        .burger-icon.bottom-right {
+            bottom: -50px;
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="BB-L.png" alt="Burger Box Logo" class="logo">
+            <h1>BURGER BOX</h1>
+            <p>SINCE 2020</p>
+        </div>
+
+        <div class="section-yellow">
+            <img src="BB2.png" alt="Burger Icon" class="burger-icon top-left">
+            <!-- <img src="BB2.png" alt="Burger Icon" class="burger-icon top-right"> -->
+            <h2>BURGERS</h2>
+            <div class="item">
+                <span>El Aburrio</span>
+                <span>$13.00</span>
+            </div>
+            <div class="item">
+                <span>Pa'l Vegano <img src="vegan.png" alt="Vegetarian" class="icon"></span>
+                <span>$12.50</span>
+            </div>
+            <div class="item">
+                <span>El Dominó</span>
+                <span>$15.95</span>
+            </div>
+            <div class="item">
+                <span>Pollito Chicken</span>
+                <span>$13.50</span>
+            </div>
+            <div class="item">
+                <span>El Reguero Cheesy</span>
+                <span>$16.00</span>
+            </div>
+            <div class="item">
+                <span>El Pan Comío <img src="peper.png" alt="Spicy" class="icon"></span></span>
+                <span>$13.50</span>
+            </div>
+            <div class="item">
+                <span>El Juicy</span>
+                <span>$15.00</span>
+            </div>
+        </div>
+
+        <div class="section-black">
+            <img src="BB2-y.png" alt="Burger Icon" class="burger-icon top-left">
+            <!-- <img src="BB2.png" alt="Burger Icon" class="burger-icon top-right"> -->
+            <h2>PA' LAS BENDIS</h2>
+            <div class="item">
+                <span>El Bendi Burger</span>
+                <span>$8.50</span>
+            </div>
+            <div class="item">
+                <span>Canitos de Pollo</span>
+                <span>$7.00</span>
+            </div>
+            <div class="item">
+                <span>La Mogoya</span>
+                <span>$7.00</span>
+            </div>
+        </div>
+
+        <div class="section-yellow">
+            <img src="BB2.png" alt="Burger Icon" class="burger-icon top-left">
+            <h2>APERITIVOS</h2>
+            <div class="item">
+                <span>El Empastelillo</span>
+                <span>$3.00</span>
+            </div>
+            <div class="item">
+                <span>Las Cebollitas Empaña</span>
+                <span>$7.00</span>
+            </div>
+            <div class="item">
+                <span>Box Fries</span>
+                <span>$10.95</span>
+            </div>
+        </div>
+
+        <div class="section-black">
+            <h2>LOS EXTRAS</h2>
+            <img src="BB2-y.png" alt="Burger Icon" class="burger-icon top-left">
+            <div class="item">
+                <span>Salsa de Queso y Bacon (Extra)</span>
+                <span>$1.75</span>
+            </div>
+            <div class="item">
+                <span>Papas Fritas</span>
+                <span>$2.00</span>
+            </div>
+        </div>
+
+        <div class="section-yellow">
+            <img src="BB2.png" alt="Burger Icon" class="burger-icon top-left">
+            <!-- <img src="BB2.png" alt="Burger Icon" class="burger-icon bottom-right"> -->
+            <h2>PA' BEBER</h2>
+            <div class="item">
+                <span>Coca Cola</span>
+                <span>$2.00</span>
+            </div>
+            <div class="item">
+                <span>Coca Cola Zero</span>
+                <span>$2.00</span>
+            </div>
+            <div class="item">
+                <span>Sprite</span>
+                <span>$2.00</span>
+            </div>
+            <div class="item">
+                <span>Ginger Ale</span>
+                <span>$2.00</span>
+            </div>
+            <div class="item">
+                <span>Agua</span>
+                <span>$1.25</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>TODOS NUESTROS BURGERS VIENEN ACOMPAÑADOS DE PAPAS FRITAS Y REFRESCO O AGUA.</p>
+            <p>PREGUNTA POR NUESTRO BURGER DEL MES</p>
+        </div>
+        <div class="item2">
+            <p>VEGETARIAN <img src="vegan.png" alt="Vegetarian" class="icon"></span></span> SPICY <img src="peper.png" alt="Spicy" class="icon"></p>
+        </div>
+    </div>
+</body>
+</html>
