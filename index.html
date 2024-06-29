@@ -13,7 +13,7 @@
             position: relative;
         }
         .container {
-            max-width: 500px;
+            max-width: 450px;
             margin: auto;
             padding: 20px;
             position: relative;
@@ -21,7 +21,7 @@
         .header {
             text-align: center;
             padding: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             background-color: black;
             color: white;
         }
@@ -35,23 +35,32 @@
         .section-yellow {
             background-color: #ffd700;
             padding: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             position: relative;
         }
         .section-black {
             background-color: black;
             color: white;
             padding: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             position: relative;
         }
         .section-yellow h2, .section-black h2 {
             margin: 0 0 10px 0;
         }
         .item {
+            margin-bottom: 15px;
+        }
+        .item-header {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        .item-description {
+            margin-top: 5px;
+            font-size: 0.8em;
+            color: #333;
+            max-width:290px
         }
         .item2 {
             /* display: flex; */
@@ -107,33 +116,67 @@
             <!-- <img src="BB2.png" alt="Burger Icon" class="burger-icon top-right"> -->
             <h2>BURGERS</h2>
             <div class="item">
-                <span>El Aburrio</span>
-                <span>$13.00</span>
+                <div class="item-header">
+                    <span>El Aburrio</span>
+                    <span>$13.00</span>
+                </div>
+                <div class="item-description">
+                    Pan Brioche, Carne de Res, Bacon, Queso Cheddar, Lechuga, Tomate y Mayonesa
+                </div>
             </div>
             <div class="item">
-                <span>Pa'l Vegano <img src="vegan.png" alt="Vegetarian" class="icon"></span>
-                <span>$12.50</span>
+                <div class="item-header">                
+                    <span>Pa'l Vegano <img src="vegan.png" alt="Vegetarian" class="icon"></span>
+                    <span>$12.50</span>
+                </div>
+                <div class="item-description">
+                    Pan Brioche, Carne a base de Coliflor, Repollo encurtido y Aguacate a lo Burger Box
+                </div>
             </div>
             <div class="item">
-                <span>El Dominó</span>
-                <span>$15.95</span>
+                <div class="item-header"> 
+                    <span>El Dominó</span>
+                    <span>$15.95</span>
+                </div>
+                <div class="item-description">
+                    Pan Brioche, Carne de Res, Croqueta de Mac n' Cheese, Cebollas Crujientes y Alioli de Cilantro & Aguacate.
+                </div>
+            </div>        
+            <div class="item">
+                <div class="item-header"> 
+                    <span>Pollito Chicken</span>
+                    <span>$13.50</span>
+                </div>
+                <div class="item-description">
+                    Pan Brioche, Molida de Pollo, Fufú en almíbar de China, Lechuga, Alioli de Aguacate & Cilantro y Queso Suizo.
+                </div>                    
             </div>
             <div class="item">
-                <span>Pollito Chicken</span>
-                <span>$13.50</span>
+                <div class="item-header"> 
+                    <span>El Reguero Cheesy</span>
+                    <span>$16.00</span>
+                </div>
+                <div class="item-description">
+                    Pan Brioche, NY Steak en Tiras, Queso Provolone, Pimientos Salteados, Cebollas Caramelizadas y Mayonesa.
+                </div>    
             </div>
             <div class="item">
-                <span>El Reguero Cheesy</span>
-                <span>$16.00</span>
+                <div class="item-header"> 
+                    <span>El Pan Comío <img src="peper.png" alt="Spicy" class="icon"></span></span>
+                    <span>$13.50</span>
+                </div>
+                <div class="item-description">
+                    Pan Brioche, Molida de Res, Bacon, Cebollas Crujientes, Alioli de Aguacate & Cilantro, Salsa Asiática Picante y Queso
+                </div>    
             </div>
             <div class="item">
-                <span>El Pan Comío <img src="peper.png" alt="Spicy" class="icon"></span></span>
-                <span>$13.50</span>
-            </div>
-            <div class="item">
-                <span>El Juicy</span>
-                <span>$15.00</span>
-            </div>
+                <div class="item-header"> 
+                    <span>El Juicy</span>
+                    <span>$15.00</span>
+                </div>
+                <div class="item-description">
+                    Pan Brioche, Doble Carne de Res Smash, Queso Cheddar, Bacon, Mayonesa y Cebollas Caramelizadas.
+                </div>                      
         </div>
 
         <div class="section-black">
@@ -141,72 +184,98 @@
             <!-- <img src="BB2.png" alt="Burger Icon" class="burger-icon top-right"> -->
             <h2>PA' LAS BENDIS</h2>
             <div class="item">
-                <span>El Bendi Burger</span>
-                <span>$8.50</span>
+                <div class="item-header"> 
+                    <span>El Bendi Burger</span>
+                    <span>$8.50</span>
+                </div>
             </div>
             <div class="item">
-                <span>Canitos de Pollo</span>
-                <span>$7.00</span>
+                <div class="item-header"> 
+                    <span>Canitos de Pollo</span>
+                    <span>$7.00</span>
+                </div>
             </div>
             <div class="item">
-                <span>La Mogoya</span>
-                <span>$7.00</span>
+                <div class="item-header"> 
+                    <span>La Mogoya</span>
+                    <span>$7.00</span>
+                </div>
             </div>
         </div>
-
+        
         <div class="section-yellow">
             <img src="BB2.png" alt="Burger Icon" class="burger-icon top-left">
             <h2>APERITIVOS</h2>
             <div class="item">
-                <span>El Empastelillo</span>
-                <span>$3.00</span>
+                <div class="item-header"> 
+                    <span>El Empastelillo</span>
+                    <span>$3.00</span>
+                </div>
             </div>
             <div class="item">
-                <span>Las Cebollitas Empaña</span>
-                <span>$7.00</span>
+                <div class="item-header"> 
+                    <span>Las Cebollitas Empaña</span>
+                    <span>$7.00</span>
+                </div>
             </div>
             <div class="item">
-                <span>Box Fries</span>
-                <span>$10.95</span>
+                <div class="item-header"> 
+                    <span>Box Fries</span>
+                    <span>$10.95</span>
+                </div>
             </div>
         </div>
-
+        
         <div class="section-black">
             <h2>LOS EXTRAS</h2>
             <img src="BB2-y.png" alt="Burger Icon" class="burger-icon top-left">
             <div class="item">
-                <span>Salsa de Queso y Bacon (Extra)</span>
-                <span>$1.75</span>
+                <div class="item-header"> 
+                    <span>Salsa de Queso y Bacon (Extra)</span>
+                    <span>$1.75</span>
+                </div>
             </div>
             <div class="item">
-                <span>Papas Fritas</span>
-                <span>$2.00</span>
+                <div class="item-header"> 
+                    <span>Papas Fritas</span>
+                    <span>$2.00</span>
+                </div>
             </div>
         </div>
-
+        
         <div class="section-yellow">
             <img src="BB2.png" alt="Burger Icon" class="burger-icon top-left">
             <!-- <img src="BB2.png" alt="Burger Icon" class="burger-icon bottom-right"> -->
             <h2>PA' BEBER</h2>
             <div class="item">
-                <span>Coca Cola</span>
-                <span>$2.00</span>
+                <div class="item-header"> 
+                    <span>Coca Cola</span>
+                    <span>$2.00</span>
+                </div>
             </div>
             <div class="item">
-                <span>Coca Cola Zero</span>
-                <span>$2.00</span>
+                <div class="item-header"> 
+                    <span>Coca Cola Zero</span>
+                    <span>$2.00</span>
+                </div>
             </div>
             <div class="item">
-                <span>Sprite</span>
-                <span>$2.00</span>
+                <div class="item-header"> 
+                    <span>Sprite</span>
+                    <span>$2.00</span>
+                </div>
             </div>
             <div class="item">
-                <span>Ginger Ale</span>
-                <span>$2.00</span>
+                <div class="item-header"> 
+                    <span>Ginger Ale</span>
+                    <span>$2.00</span>
+                </div>
             </div>
             <div class="item">
-                <span>Agua</span>
-                <span>$1.25</span>
+                <div class="item-header"> 
+                    <span>Agua</span>
+                    <span>$1.25</span>
+                </div>
             </div>
         </div>
 
